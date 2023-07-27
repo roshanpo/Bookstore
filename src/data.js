@@ -40,11 +40,11 @@ export const catagories = [
         id : 2,
         image:"src/images/normal_people.png",
         title:"Fiction"
-    }
+    },
     // },
-    // {
-    //     id : 3,
-    //     image:"src/images/catagorythree.png",
-    //     title:"Biography"
-    // },
+    {
+         id : 3,
+         image:"src/images/catagorythree.png",
+         title:"Biography"
+     },
 ]
