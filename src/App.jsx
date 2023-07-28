@@ -5,6 +5,7 @@ import Announcement from './components/Announcement'
 import './App.css'
 import Slider from './components/Slider'
 import Catagories from './components/Catagories'
+import Products from './components/Products'
 
 export default function App() {
   //const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ export default function App() {
     <Navbar/>
     <Slider/>
     <Catagories/>
+    <Products/>
     </>
   )
 }
