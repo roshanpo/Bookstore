@@ -14,7 +14,7 @@ const Image = styled.img`
     height: 100%;
     object-fit: contain;
     filter: blur(1.5px);
-    /* opacity: 1; */
+    
     
 `
 
