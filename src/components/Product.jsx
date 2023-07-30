@@ -5,8 +5,7 @@ import styled from 'styled-components'
 //import {items} from "../data"
 
 const Image = styled.img`
-    /* display: flex;
-    flex: 1; */
+    /*flex: 1; */
     width: 100%;
     height: 100%;
     object-fit: contain;
