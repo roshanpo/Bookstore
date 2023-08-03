@@ -25,7 +25,6 @@ const Container= styled.div`
     } */
     width: 20%; 
     align-items: center;
-    //background-color: #c4e2ec;
     /* height: 100%; */
     /* object-fit: contain; */
     //padding-bottom: 40px;
