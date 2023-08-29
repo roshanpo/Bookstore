@@ -10,29 +10,59 @@ const Image = styled.img`
     width: 100%;
     height: 100%;
     object-fit: contain;
-    
 `;
 
 const Container= styled.div`
-    //flex: 1;
     display: flex;
+    flex-direction: column;
     flex: wrap;
-    height: 40vh;
+    //height: 40vh;
     margin: 30px;
     gap:20px;
+    //row-gap: 20px;
     /* :hover{
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     } */
-    width: 20%; 
+    //cursor: pointer;
+    //width: 20%; 
     align-items: center;
-    /* height: 100%; */
+    //height: 100%;
     /* object-fit: contain; */
-    //padding-bottom: 40px;
+    padding-bottom: 20px;
+    transition: transform 0.3s;
+    &:hover {
+    //text-decoration: underline; /* Underline on hover */
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
 
 `
-const Icons = styled.div`
 
+
+const Button = styled.button`
+    //border: none;
+    font-size: 18px;
+    background-color: transparent;
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    align-items: center;
+    padding: 5px;
+   // box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 `
+const Name = styled.span`
+    font-size: 20px;
+    font-weight: 400;
+     ${Container}:hover & {     //underlines the name if you hover the container
+    text-decoration: underline; /* Underline on hover */
+    cursor: pointer;
+  }
+    
+`
+// const Icons = styled.div`
+
+// `
 
 
 export default function Product({item}){
@@ -40,9 +70,10 @@ export default function Product({item}){
     return(
        <Container>
             <Image src={item.image}/>
-            <Icons>
+            <Name>{item.name}</Name>
+                <Button>Add To Cart
                 <ShoppingCartTwoToneIcon/>
-            </Icons>
+                </Button>
        </Container>
     )
 }

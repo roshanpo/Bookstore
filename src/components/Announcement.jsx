@@ -10,6 +10,7 @@ const Container = styled('div')({
     textAlign : 'center',
     justifyContent:'center',
     wordSpacing: '3px',
+    paddingTop: '3px',
 })
 
 

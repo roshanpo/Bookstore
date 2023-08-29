@@ -53,34 +53,42 @@ export const catagories = [
 export const items = [
     {
         id : 1,
+        name : "A Little Life",
         image:"src/images/alittlelife.jpg"
     },
     {
         id : 2,
+        name : "Harry Potter",
         image:"src/images/harryporter.jpg"
     },
     {
         id : 3,
+        name : "Norwegian Wood",
         image:"src/images/norwegianwood.jpg"
     },
     {
         id : 4,
+        name : "Hippie",
         image:"src/images/hippie.jpg"
     },
     {
         id : 5,
+        name : "It Ends With Us",
         image:"src/images/itendswithus.jpg"
     },
     {
         id : 6,
+        name : "Kafka On The Shore",
         image:"src/images/kafkaontheshore.jpg"
     },
     {
         id : 7,
+        name : "Karnali Blues",
         image:"src/images/karnaliblues.jpg"
     },
     {
         id : 8,
+        name : "The Book Theif",
         image:"src/images/thebooktheif.jpg"
     }
 ]

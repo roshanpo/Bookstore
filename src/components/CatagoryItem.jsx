@@ -7,6 +7,13 @@ const Container = styled.div`
     height: 70vh;
     align-items: center;
     position: relative;
+    transition: 0.3s;
+    &:hover {
+    //text-decoration: underline; /* Underline on hover */
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
 `
 
 const Image = styled.img`
@@ -14,6 +21,7 @@ const Image = styled.img`
     height: 100%;
     object-fit: contain;
     filter: blur(1.5px);
+    
     
     
 `
@@ -28,12 +36,19 @@ const Title = styled.h1`
 const Button = styled.button`
    
     /* font-size: 1.3em; */
-    border: none;
+    border-color: gray;
     padding: 8px;
     background-color:white;
-    color: gray;
+    color: #615f5f;
+    cursor: pointer;
+    //box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition : 0.3s;
+    &:hover {
+    //text-decoration: underline; /* Underline on hover */
+    transform: scale(1.05);
     cursor: pointer;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
 `
 
 const Info = styled.div`

@@ -7,6 +7,11 @@ import Product from "./Product"
 const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    /* :hover{
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    cursor: pointer; */
     /* margin: 20px; */
 `
 
