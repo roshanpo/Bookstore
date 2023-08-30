@@ -54,41 +54,49 @@ export const items = [
     {
         id : 1,
         name : "A Little Life",
+        price : "Rs 990.00",
         image:"src/images/alittlelife.jpg"
     },
     {
         id : 2,
         name : "Harry Potter",
+        price : "Rs 1100.00",
         image:"src/images/harryporter.jpg"
     },
     {
         id : 3,
         name : "Norwegian Wood",
+        price : "Rs 850.00",
         image:"src/images/norwegianwood.jpg"
     },
     {
         id : 4,
         name : "Hippie",
+        price : "Rs 450.00",
         image:"src/images/hippie.jpg"
     },
     {
         id : 5,
         name : "It Ends With Us",
+        price : "Rs 600.00",
         image:"src/images/itendswithus.jpg"
     },
     {
         id : 6,
         name : "Kafka On The Shore",
+        price : "Rs 840.00",
         image:"src/images/kafkaontheshore.jpg"
     },
     {
         id : 7,
         name : "Karnali Blues",
+        price : "Rs 490.00",
         image:"src/images/karnaliblues.jpg"
     },
     {
         id : 8,
         name : "The Book Theif",
+        price : "Rs 500.00",
         image:"src/images/thebooktheif.jpg"
     }
 ]

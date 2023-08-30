@@ -52,6 +52,13 @@ const Button = styled.button`
     font-size: 20px;
     background-color: transparent;
     cursor: pointer;
+    transition: transform 0.3s;
+    &:hover {
+    //text-decoration: underline; /* Underline on hover */
+    transform: scale(1.05);
+    //cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
 `
 const Arrow = styled.div`
     width: 50px;

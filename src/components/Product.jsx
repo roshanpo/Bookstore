@@ -60,6 +60,11 @@ const Name = styled.span`
   }
     
 `
+
+const Price = styled.span`
+    font-size: 18px;
+    font-weight: 400;
+`
 // const Icons = styled.div`
 
 // `
@@ -71,6 +76,7 @@ export default function Product({item}){
        <Container>
             <Image src={item.image}/>
             <Name>{item.name}</Name>
+            <Price>{item.price}</Price>
                 <Button>Add To Cart
                 <ShoppingCartTwoToneIcon/>
                 </Button>
