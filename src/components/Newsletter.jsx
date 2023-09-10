@@ -9,7 +9,7 @@ const Container = styled.div`
     row-gap: 20px;
     padding: 20px;
     height: 200px;
-    background-color: #ccdee9;
+    background-color: white;
     justify-content: center;
 `
 const InputContainer = styled.div`
