@@ -7,7 +7,8 @@ import Product from "./Product"
 const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
+    gap: 20px;
     /* :hover{
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }

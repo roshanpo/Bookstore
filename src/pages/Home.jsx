@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Navbar from '../components/navbar'
+import Navbar from '../components/Navbar'
 import Announcement from '../components/Announcement'
 import '../App.css'
 import Slider from '../components/Slider'

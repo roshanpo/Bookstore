@@ -11,7 +11,7 @@ import { blue } from '@mui/material/colors';
     
 const Language = styled('div')({
   cursor : 'pointer',
-  color : 'blueviolet'
+  color : 'blueviolet',
 })
 
 const Navbar = styled('nav')({
