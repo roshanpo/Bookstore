@@ -19,7 +19,7 @@ export default function Announcement(){
 
     return (
         <div>
-        <Container>Super Deal! 50% off on orders over $500</Container>
+        <Container>Super Deal! 50% off on orders over Rs 5000</Container>
         </div>
     )
 }

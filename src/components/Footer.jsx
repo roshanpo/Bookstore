@@ -1,5 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import InstagramIcon from '@mui/icons-material/Instagram';
+import PinterestIcon from '@mui/icons-material/Pinterest';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 
 
 const Container = styled.div`
@@ -18,14 +24,21 @@ const Left = styled.div`
     flex-wrap: wrap;
 `
 const Center = styled.div`
+    margin-left: 40px;
     flex: 1;
 `
 const Right = styled.div`
     flex: 1;
 `
-const HeaderText = styled.div`
-    font-size: 40px;
+const LogoText = styled.div`
+    font-size: 50px;
     font-weight: 500;
+    color : white;
+    padding-bottom: 10px;
+`
+const HeaderText = styled.div`
+    font-size: 30px;
+    font-weight: 400;
     color : white;
     padding-bottom: 10px;
 `
@@ -35,21 +48,65 @@ const NormalText = styled.div`
     color: white;
 `
 
+const SocialIcons = styled.div`
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    margin-top: 30px;
+`
+
+const List = styled.li`
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    list-style-type: none;
+    margin-bottom: 10px;
+`
+
+
+const ContactList = styled.li`
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    list-style-type: none;
+    margin-bottom: 10px;
+    
+`
+
 export default function Footer(){
 
 
     return(
         <Container>
             <Left>
-                <HeaderText>ROSHAY</HeaderText>
+                <LogoText>ROSHAY</LogoText>
                 <NormalText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                Discover genuine books, obtained directly from international publishers. Show appreciation for the author's dedication with each acquisition.  
                 </NormalText>
+                <SocialIcons>
+                <InstagramIcon/>
+                <PinterestIcon/>
+                <TwitterIcon/>
+            </SocialIcons>
             </Left>
             <Center>
-                <NormalText>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</NormalText>
+                <HeaderText>Quick Links</HeaderText>
+                <List>Home</List>
+                <List>Order</List>
+                <List>Search</List>
+                <List>Wishlist</List> 
+                <List>Our Story</List>  
+                
             </Center>
-            <Right></Right>
+            <Right>
+                <HeaderText>Contact</HeaderText>
+                <ContactList><CallOutlinedIcon/> +977 9754367423</ContactList>
+                <ContactList><EmailOutlinedIcon/> contact@roshay.com</ContactList>
+                <ContactList><LocationOnOutlinedIcon/> Patan, Bagmati, Nepal</ContactList>
+            </Right>
         </Container>
     )
 }
