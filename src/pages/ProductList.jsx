@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Products from "../components/Products";
 import styled from "styled-components";
+import Newsletter from "../components/Newsletter";
 
 
 
@@ -60,10 +61,8 @@ export default function ProductList(){
                         <Option>Price: Low to High</Option>    
                     </Select>
                 </SortContainer>
-                
-                
-            
             <Products/>
+            <Newsletter/>
             <Footer/>
         </>
     )
