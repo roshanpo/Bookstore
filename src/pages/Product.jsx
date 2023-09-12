@@ -51,7 +51,7 @@ const Price = styled.span`
 `
 
 const CartButton = styled.button`
-    //border: none;
+    border: 1px solid #000;
     font-size: 18px;
     background-color: transparent;
     display: flex;
@@ -63,10 +63,13 @@ const CartButton = styled.button`
     justify-content: center;
     margin-top: 15px;
     margin-bottom: 15px;
-   // box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    &:hover{
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        //border: 2px solid #000;
+    }
 `
 const ShopButton = styled.button`
-    //border: none;
+    border: 1px solid #000;
     font-size: 18px;
     background-color: teal;
     color: white;
@@ -77,6 +80,11 @@ const ShopButton = styled.button`
     padding: 5px;
     width: 200px;
     justify-content: center;
+    &:hover{
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        //border: 2px solid #000;
+    }
+    margin-bottom: 10px;
    // box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 `
 const QuantityButton = styled.button`
@@ -99,6 +107,10 @@ const QuantityWrapper = styled.div`
     align-items: center;
     margin-top: 5px;
     margin-bottom: 10px;
+    &:hover{
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        //border: 2px solid #000;
+    }
 `
 
 
@@ -137,10 +149,19 @@ export default function Product(){
                     </QuantityWrapper>
                     <Price>Rs 990</Price>
                     <CartButton>Add To Cart</CartButton>
-                    <ShopButton>Shop Now</ShopButton>
-                    <Description>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus sunt nobis voluptatem 
-                    aperiam nemo possimus, eaque tempora? Eos sapiente ipsum dolores consequatur? 
-                    Labore ducimus nostrum reiciendis! Tempore repudiandae sint dolorum!
+                    <ShopButton>Buy Now</ShopButton>
+                    <Description>When four classmates from a small Massachusetts college move to New York to make their way, they're broke,
+                         adrift, and buoyed only by their friendship and ambition. There is kind, handsome Willem, an aspiring actor; JB, 
+                         a quick-witted, sometimes cruel Brooklyn-born painter seeking entry to the art world; Malcolm, 
+                        a frustrated architect at a prominent firm; and withdrawn, brilliant, enigmatic Jude, who serves as their center
+                         of gravity.<br/>
+                         <br/>
+
+                        Over the decades, their relationships deepen and darken, tinged by addiction, success, and pride. Yet their greatest
+                        challenge, 
+                        each comes to realize, is Jude himself, by midlife a terrifyingly talented litigator yet an increasingly broken man,
+                        his mind and body scarred by an unspeakable childhood, and haunted by what he fears is a degree of trauma that he’ll 
+                        not only be unable to overcome—but that will define his life forever.
                     </Description>
                 </InfoContainer>
             </Wrapper>
