@@ -48,11 +48,12 @@ const CheckoutButton = styled(Button)`
     width: 150px;
     background-color: black;
     color: white;
-    margin: 20px 20px 20px 20px;
+    margin: 20px 20px 80px 20px;
 `
 const TopText = styled.span`
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 50px;
+    font-weight: 600;
     //text-decoration: underline;
     //flex: 1;
 `
@@ -61,12 +62,7 @@ const TopText = styled.span`
 //     //margin-bottom:40px;
 //     //flex: 2;
 // `
-// const Line = styled.div`
-//   width: 85%; /* Width of the line, adjust as needed */
-//   height: 1px; /* Thickness of the line */
-//   background-color: #bbb8b8; /* Line color (black in this example) */
-//   margin: 20px 0;
-// `
+
 const Product = styled.div`
     //padding: 30px;
     display: flex;
@@ -89,7 +85,7 @@ const ProductName = styled.h2`
     font-weight: 500;
     
 `
-const ProductPrice = styled.span`
+const GrayText = styled.span`
     font-size: 18px;
     color: gray;
 `
@@ -98,8 +94,6 @@ const ProductDescription = styled.div`
     display: flex;
     flex-direction: column;
     align-items:flex-start;
-    //max-width: 150px;
-    //flex: 0.8;
 `
 const Quantity = styled.div`
     flex: 1;
@@ -123,9 +117,6 @@ const ProductQuantity = styled.div`
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         //border: 2px solid #000;
     }
-    //margin-left: 24.5%;
-    //flex-shrink: 3;
-    //flex: 1;
 `
 const QuantityChangeButton = styled.button`
     width: 20px;
@@ -181,8 +172,9 @@ export default function Cart(){
                         <ProductInfo>
                             <ProductImage src="src/images/alittlelife.jpg"/>
                             <ProductDescription>
+                                <GrayText>Hanya Yanagiahra</GrayText>
                                 <ProductName>A Little Life</ProductName>
-                                <ProductPrice>Rs.{Price}</ProductPrice>
+                                <GrayText>Rs.{Price}</GrayText>
                             </ProductDescription>
                         </ProductInfo>
                     </Product>
