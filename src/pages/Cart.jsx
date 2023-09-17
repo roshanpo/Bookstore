@@ -56,11 +56,7 @@ const TopText = styled.span`
     font-weight: 600;
     
 `
-// const ProductText = styled.span`
-//     font-size: 16px;
-//     //margin-bottom:40px;
-//     //flex: 2;
-// `
+
 
 const Product = styled.div`
     //padding: 30px;
