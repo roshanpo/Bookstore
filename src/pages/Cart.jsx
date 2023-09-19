@@ -132,7 +132,6 @@ const ProductTotal = styled.span`
     
     font-size: 20px;
     font-weight: 500;
-    //margin-left: 34vh;
 `
 const Bottom = styled.div`
     display: flex;
